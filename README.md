@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Car Showcase
 
-## Getting Started
+This is a car showcase application built with [Next.js](https://nextjs.org/) and [React](https://reactjs.org/). The application allows users to view details about different cars, filter them based on certain criteria, and possibly rent them (renting still in development).
 
-First, run the development server:
+## Project Structure
+
+The project is structured into several directories:
+
+- `app`: Contains the main layout and page of the application.
+- `components`: Contains all the React components used in the application. This includes components for displaying car details, a search bar, a custom filter, and more.
+- `constants`: Contains constant values used throughout the application.
+- `types`: Contains TypeScript type definitions used in the application.
+- `utils`: Contains utility functions used in the application.
+
+## Features
+
+- View details about different cars
+- Filter cars based on certain criteria
+
+## Installation
+
+1. Clone or download the repository.
+
+   ```bash
+   git clone https://github.com/zVeqsxy/car_showcase.git
+   ```
+
+2. Navigate to the project directory:
+
+   ```bash
+   cd car_showcase
+   ```
+
+3. Install the dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Run the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open http://localhost:3000 in your browser to see the result. Now you can start editing. The page auto-updates as you edit the file.
+
+## Building
+
+To build the application, run:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Acknowledgements
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This project was based on a tutorial I watched. All credits go to [JavaScript Mastery](https://www.youtube.com/watch?v=pUNSHPyVryU).
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Contributing
 
-## Learn More
+Contributions to this project are welcome. If you find any issues or have suggestions for improvements, feel free to open an issue or submit a pull request.
 
-To learn more about Next.js, take a look at the following resources:
+## License
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This project is licensed under the [MIT License](LICENSE).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Contact
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+For any inquiries or questions, please contact [Mohamad Kanoua](mailto:Reyhamudi609@gmail.com).
