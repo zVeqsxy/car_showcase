@@ -52,7 +52,7 @@ const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => {
                         alt="close"
                         width={20}
                         height={20}
-                        className="object-contain"
+                        className="object-contain hover:opacity-50"
                       />
                     </button>
 
