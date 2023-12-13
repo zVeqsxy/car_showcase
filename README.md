@@ -16,6 +16,8 @@ The project is structured into several directories:
 
 - View details about different cars
 - Filter cars based on certain criteria
+- Search for cars by manufacturer and model
+- View cars in a grid or list view
 
 ## Installation
 
@@ -44,14 +46,6 @@ The project is structured into several directories:
    ```
 
 5. Open http://localhost:3000 in your browser to see the result. Now you can start editing. The page auto-updates as you edit the file.
-
-## Building
-
-To build the application, run:
-
-```bash
-npm run build
-```
 
 ## Acknowledgements
 
