@@ -41,6 +41,7 @@ const SearchManufacturer = ({
             placeholder="Volkswagen"
             displayValue={(manufacturer: string) => manufacturer}
             onChange={(e) => setQuery(e.target.value)}
+            autoComplete="off"
           />
 
           <Transition
@@ -50,7 +51,7 @@ const SearchManufacturer = ({
             leaveTo="opacity-0"
             afterLeave={() => setQuery("")}
           >
-            <Combobox.Options>
+            <Combobox.Options className="absolute w-full z-10 bg-white">
               {filteredManufacturers.map((item) => (
                 <Combobox.Option
                   key={item}

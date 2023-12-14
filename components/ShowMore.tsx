@@ -1,7 +1,6 @@
 "use client";
 import { ShowMoreProps } from "@/types";
 import { useRouter } from "next/navigation";
-import { useState } from "react";
 import { CustomButton } from ".";
 import { updateSearchParams } from "@/utils";
 

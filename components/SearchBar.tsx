@@ -11,7 +11,7 @@ const SearchButton = ({ otherClasses }: { otherClasses: string }) => (
       alt="maginifying glass"
       width={40}
       height={40}
-      className="object-contain"
+      className="object-contain hover:opacity-50"
     />
   </button>
 );
@@ -34,16 +34,16 @@ const SearchBar = () => {
   const updateSearchParams = (model: string, manufacturer: string) => {
     const params = new URLSearchParams(window.location.search);
 
-    if (model) {
-      params.set("model", model);
-    } else {
-      params.delete("model");
-    }
-
     if (manufacturer) {
       params.set("manufacturer", manufacturer);
     } else {
       params.delete("manufacturer");
+    }
+
+    if (model) {
+      params.set("model", model);
+    } else {
+      params.delete("model");
     }
 
     const newPathName = `${window.location.pathname}?${params.toString()}`;
@@ -76,6 +76,7 @@ const SearchBar = () => {
           onChange={(e) => setModel(e.target.value)}
           placeholder="Tiguan"
           className="searchbar__input"
+          autoComplete="off"
         />
         <SearchButton otherClasses="sm:hidden" />
       </div>
